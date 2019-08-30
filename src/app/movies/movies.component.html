@@ -1,0 +1,26 @@
+<p>movies works!</p>
+
+<div class="container popular-card">
+    <div *ngFor="let movie of arr.results">
+        <div class="card" style="width: 18rem;">
+            <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path}}" class="card-img-top" alt="Movie Picture">
+            <div class="card-body">
+                <h5 class="card-title">{{movie.original_title}}</h5>
+                <p class="card-text">{{movie.overview}}</p>
+                <a href="#" class="btn btn-primary">Details</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- export class MoviesService {
+  
+    private url: string = 'https://api.themoviedb.org/3/movie/popular?api_key=779eeb74ebac33d316c68a4d86a92e84'
+    constructor(private http: HttpClient) { }
+      
+     getNews(): Observable <IMovie>{
+        return this.http.get<IMovie>(this.url);
+      }
+  } -->

@@ -1,0 +1,17 @@
+.popular-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.popular-card > div {
+    /* margin: 0.5rem; */
+    height: 600px;
+    overflow: hidden;
+}
+.card-body > p {
+    height: 70%;
+    overflow: hidden;
+}
+.card-img-top {
+    height: 300px;
+}
